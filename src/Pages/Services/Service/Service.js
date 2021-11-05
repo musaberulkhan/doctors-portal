@@ -11,7 +11,7 @@ const Service = (props) => {
     const { name, description, img } = props.service;
     return (
         <div>
-            <Card sx={{ minWidth: 275 }}>
+            <Card sx={{ minWidth: 275, boxShadow:0 }}>
                 <CardContent>
                     <CardMedia
                         component="img"
@@ -23,12 +23,9 @@ const Service = (props) => {
                         Word of the Day
                     </Typography>
                     <Typography variant="h5" component="div">
-                        be{ }nev{ }o{ }lent
-                    </Typography>
-                    <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                        adjective
-                    </Typography>
-                    <Typography variant="body2">
+                        {name}
+                    </Typography>                   
+                    <Typography variant="body2" color="text.secondary">
                         {description}
                     </Typography>
                 </CardContent>
